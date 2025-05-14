@@ -2,7 +2,10 @@ package recursion;
 
 public class CountDownTimer {
     public static void countDown(int n) {
-        // solution here
+        System.out.print(n + "\s");
+        if (n > 1){
+            countDown(n-1);
+        }
     }
 
     public static void main(String[] args) {
